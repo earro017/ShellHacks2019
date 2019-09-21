@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "myApp-20190921105158"
+    },
+    "appServicePlanName": {
+      "value": "myApp-20190921105442"
+    },
+    "sku": {
+      "value": "B1"
+    },
+    "linuxFxVersion": {
+      "value": "python|3.7"
+    },
+    "subscriptionId": {
+      "value": "389d88c1-8716-44cc-8d77-25891ea69ab7"
+    },
+    "location": {
+      "value": "Central US"
+    }
+  }
+}
