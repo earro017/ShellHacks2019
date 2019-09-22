@@ -1,6 +1,14 @@
 ﻿<template>
   <div>
     <main id="mainContent">
+<<<<<<< HEAD
+      <div class="text-center header">
+        <p><mark></mark></p>
+        <h1>
+        <mark>Breaking the Taboo of HIV/AIDS</mark>
+        </h1>
+        <p><mark></mark></p>
+=======
       <div class="text-center header ">
         <h1>Breaking the Taboo of HIV/AIDS</h1>
        
@@ -8,10 +16,15 @@
           href="https://mobile.twitter.com/hashtag/IGotTested?src=hash&i=2e7b6c1e63ce1525&p=h&e=1"
           class="btn btn-primary my-2"
         >Click here to see all Twitter Results for #igottested</a>
+>>>>>>> 8b2ec72f78deae207d37960d8620903c7d12f827
       </div>
 
       <div class="container">
         <div class="row justify-content-center py-5">
+<<<<<<< HEAD
+          <h2>Community Testimonials</h2>
+       </div>
+=======
           <h1>Community Testimonials</h1>
         </div>
 
@@ -72,6 +85,7 @@
        <div>
   
 </div>
+>>>>>>> 8b2ec72f78deae207d37960d8620903c7d12f827
 
       </div>
     </main>
@@ -142,7 +156,7 @@ export default {
 
 <style scoped>
 .header {
-  background: #000000 url(https://www.impactbnd.com/hubfs/representation-matters-in-stock-photos.jpg) 100% 100% no-repeat;
+  background: #000000 url(https://www.impactbnd.com/hubfs/representation-matters-in-stock-photos.jpg) 100% 100% no-repeat ;
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
