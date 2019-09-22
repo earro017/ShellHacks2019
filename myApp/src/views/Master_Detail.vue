@@ -1,27 +1,33 @@
 ﻿<template>
-  <div>
-    <main id="mainContent" class="container-fluid">
-      <div class="row">
-        <div class="col-2 p-0 border-right sidebar">
-          <div class="list-group list-group-flush border-bottom">
-            <MasterDetailSideBarTab
-              v-for="(textAssets, index) in masterDetailText"
-              :key="textAssets.id"
-              :index="index"
-              :tabText="textAssets.title"
-              @onDisplayTabClick="handleDisplayTabClick"
-            />
-          </div>
-        </div>
-        <MasterDetailPage :textSampleData="masterDetailText[currentDisplayTabIndex]" />
-      </div>
-    </main>
-    <BaseWarningMessage
-      v-if="WarningMessageOpen"
-      :text="WarningMessageText"
-      @onWarningClose="handleWarningClose"
-    />
+   <div>
+    <div>
+      <h2>Search and add a pin</h2>
+      <label>
+        <gmap-autocomplete
+          @place_changed="setPlace">
+        </gmap-autocomplete>
+        <button @click="addMarker">Add</button>
+      </label>
+      <br/>
+
+    </div>
+    <br>
+    <gmap-map
+      :center="center"
+      :zoom="12"
+      style="width:100%;  height: 400px;"
+    >
+      <gmap-marker
+        :key="index"
+        v-for="(m, index) in markers"
+        :position="m.position"
+        @click="center=m.position"
+      ></gmap-marker>
+    </gmap-map>
   </div>
+
+
+  
 </template>
 
 <script>
@@ -32,59 +38,45 @@ import BaseWarningMessage from "@/components/BaseWarningMessage";
 
 export default {
   name: "Master_Detail",
-
-  components: {
-    MasterDetailPage,
-    MasterDetailSideBarTab,
-    BaseWarningMessage
-  },
-
   data() {
     return {
-      masterDetailText: [
-        {
-          id: 0,
-          longDescription: "",
-          orderDate: "",
-          orderTotal: 0,
-          shipTo: "",
-          status: "",
-          title: ""
-        }
-      ],
-      currentDisplayTabIndex: 0,
-      WarningMessageOpen: false,
-      WarningMessageText: ""
+      // default to Montreal to keep it simple
+      // change this to whatever makes sense
+      center: { lat: 45.508, lng: -73.587 },
+      markers: [],
+      places: [],
+      currentPlace: null
     };
   },
 
-  created() {
-    this.fetchTextAssets();
+  mounted() {
+    this.geolocate();
   },
 
   methods: {
-    fetchTextAssets() {
-      fetch(CONSTANTS.ENDPOINT.MASTERDETAIL)
-        .then(response => {
-          if (!response.ok) {
-            throw Error(response.statusText);
-          }
-          return response.json();
-        })
-        .then(result => {
-          this.masterDetailText = result;
-        })
-        .catch(error => {
-          this.WarningMessageOpen = true;
-          this.WarningMessageText = `${CONSTANTS.ERROR_MESSAGE.MASTERDETAIL_GET} ${error}`;
-        });
+    // receives a place object via the autocomplete component
+    setPlace(place) {
+      this.currentPlace = place;
     },
-    handleWarningClose() {
-      this.WarningMessageOpen = false;
-      this.WarningMessageText = "";
+    addMarker() {
+      if (this.currentPlace) {
+        const marker = {
+          lat: this.currentPlace.geometry.location.lat(),
+          lng: this.currentPlace.geometry.location.lng()
+        };
+        this.markers.push({ position: marker });
+        this.places.push(this.currentPlace);
+        this.center = marker;
+        this.currentPlace = null;
+      }
     },
-    handleDisplayTabClick(id) {
-      this.currentDisplayTabIndex = id;
+    geolocate: function() {
+      navigator.geolocation.getCurrentPosition(position => {
+        this.center = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+      });
     }
   }
 };
