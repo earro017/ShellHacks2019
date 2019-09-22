@@ -3,7 +3,7 @@
     <main id="mainContent">
       <div class="text-center header">
         <h1>Breaking the Taboo of HIV/AIDS</h1>
-        <p>See who else is being tested and raising our numbers in awareness!</p>
+        <p>See who else is being tested and raising our numbers in awareness! :)</p>
         <a
           href="https://mobile.twitter.com/hashtag/IGotTested?src=hash&i=2e7b6c1e63ce1525&p=h&e=1"
           class="btn btn-primary my-2"
