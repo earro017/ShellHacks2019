@@ -2,27 +2,17 @@
   <div>
     <main id="mainContent">
       <div class="text-center header">
-        <h1>Breaking the Taboo of HIV/AIDS</h1>
-        <p>See who else is being tested and raising our numbers in awareness!</p>
-        <a
-          href="https://mobile.twitter.com/hashtag/IGotTested?src=hash&i=2e7b6c1e63ce1525&p=h&e=1"
-          class="btn btn-primary my-2"
-        >Click here to see all Twitter Results for #igottested</a>
+        <p><mark></mark></p>
+        <h1>
+        <mark>Breaking the Taboo of HIV/AIDS</mark>
+        </h1>
+        <p><mark></mark></p>
       </div>
 
       <div class="container">
         <div class="row justify-content-center py-5">
-          <h1>Community Testimonials</h1>
-        </div>
-
-        <div class="row justify-content-around text-center pb-5"> 
-          <GridComponent
-            v-for="textAsset in gridTextAssets"
-            :key="textAsset.id"
-            :header="textAsset.title"
-            :description="textAsset.shortDescription"
-          />
-        </div>
+          <h2>Community Testimonials</h2>
+       </div>
 
       </div>
     </main>
@@ -92,7 +82,7 @@ export default {
 
 <style scoped>
 .header {
-  background: #000000 url(https://www.impactbnd.com/hubfs/representation-matters-in-stock-photos.jpg) 100% 100% no-repeat;
+  background: #000000 url(https://www.impactbnd.com/hubfs/representation-matters-in-stock-photos.jpg) 100% 100% no-repeat ;
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
