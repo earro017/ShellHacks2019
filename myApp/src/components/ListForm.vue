@@ -3,16 +3,16 @@
     <div class="col-11">
       <input
         :value="value"
-        aria-label="Add text here..."
+        aria-label="Search Resources"
         class="form-control"
-        placeholder="Add text here..."
+        placeholder="Search Resources"
         type="text"
         @input="$emit('input', $event.target.value)"
       />
       <b-alert :show="!this.isValid" variant="danger" dismissible>{{this.emptyError}}</b-alert>
     </div>
     <span class="input-group-btn col-1">
-      <button :disabled="!this.isSubmitable" class="btn btn-primary" type="submit">Submit</button>
+      <button :disabled="!this.isSubmitable" class="btn btn-primary" type="submit">Search</button>
     </span>
   </form>
 </template>

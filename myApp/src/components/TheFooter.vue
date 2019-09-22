@@ -4,22 +4,16 @@
       <div class="row justify-content-around">
         <div class="col-8 col-md-5">
           <h5 class="title"> Reducing Miami's Transmission of HIV/AIDS</h5>
-          <p class="description">Description</p>
+          <p class="description">Responding rapidly to detect and respond to growing HIV clusters and preventing new infections one person at a time</p>
         </div>
         <div class="col-2">
           <ul class="list-unstyled">
-            <li>
-              <b-nav-item class="nav-item nav-link active" to="/Home">Home</b-nav-item>
-            </li>
-            <li>
-              <a class="footerlink" href="/">MasterDetail</a>
-            </li>
-            <li>
-              <a class="footerlink" href="/">Resources</a>
-            </li>
-            <li>
-              <a class="footerlink" href="/">Social Impact</a>
-            </li>
+           
+            <li class="list-unstyled"><a href="/Blank2">Home</a></li>
+            <li class="list-unstyled"><a href="/List">Resources</a></li>
+            <li class="list-unstyled"><a href="/Grid">Social Impact</a></li>
+            <li class="list-unstyled"><a href="/Master_Detail">View Map</a></li>
+           
           </ul>
         </div>
       </div>

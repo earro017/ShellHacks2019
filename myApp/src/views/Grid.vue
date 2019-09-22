@@ -2,20 +2,20 @@
   <div>
     <main id="mainContent">
       <div class="text-center header">
-        <h1>myApp</h1>
-        <p>This is placeholder text. Your web app description goes here.</p>
+        <h1>Breaking the Taboo of HIV/AIDS</h1>
+        <p>See who else is being tested and raising our numbers in awareness!</p>
         <a
-          href="https://github.com/Microsoft/WebTemplateStudio"
+          href="https://mobile.twitter.com/hashtag/IGotTested?src=hash&i=2e7b6c1e63ce1525&p=h&e=1"
           class="btn btn-primary my-2"
-        >Link to our Github</a>
+        >Click here to see all Twitter Results for #igottested</a>
       </div>
 
       <div class="container">
         <div class="row justify-content-center py-5">
-          <h1>Bootstrap Grid Template</h1>
+          <h1>Community Testimonials</h1>
         </div>
 
-        <div class="row justify-content-around text-center pb-5">
+        <div class="row justify-content-around text-center pb-5"> 
           <GridComponent
             v-for="textAsset in gridTextAssets"
             :key="textAsset.id"
@@ -23,6 +23,7 @@
             :description="textAsset.shortDescription"
           />
         </div>
+
       </div>
     </main>
     <BaseWarningMessage
@@ -91,8 +92,8 @@ export default {
 
 <style scoped>
 .header {
-  background-color: #cecece;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  background-color: #bfdbf1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 </style>

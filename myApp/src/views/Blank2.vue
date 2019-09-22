@@ -1,4 +1,5 @@
-﻿<template>
+﻿ 
+<template>
   <div/>
 </template>
 
@@ -10,3 +11,4 @@ export default {
 
 <style scoped>
 </style>
+ 

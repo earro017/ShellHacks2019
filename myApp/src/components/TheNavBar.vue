@@ -6,12 +6,12 @@
       <a href="#mainContent">Skip to Main Content</a>
     </div>
     <b-nav class="navbar navbar-expand-sm navbar-light border-bottom justify-content-between">
-      <a class="navbar-brand" href="/">MIAMI GETS TESTED</a>
+      <a class="navbar-brand" href="/"><header>MIAMI GETS TESTED</header></a>
       <div class="navbar-nav">
-        <b-nav-item class="nav-item nav-link active" to="/Blank2">Blank2</b-nav-item>
-        <b-nav-item class="nav-item nav-link active" to="/Grid">Grid</b-nav-item>
-        <b-nav-item class="nav-item nav-link active" to="/List">List</b-nav-item>
-        <b-nav-item class="nav-item nav-link active" to="/Master_Detail">Master_Detail</b-nav-item>
+        <b-nav-item class="nav-item nav-link active" to="/Blank2">Home</b-nav-item>
+        <b-nav-item class="nav-item nav-link active" to="/Grid">Social Impact</b-nav-item>
+        <b-nav-item class="nav-item nav-link active" to="/List">Resources</b-nav-item>
+        <b-nav-item class="nav-item nav-link active" to="/Master_Detail">View Map</b-nav-item>
         
         
       </div>
