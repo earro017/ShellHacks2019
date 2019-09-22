@@ -1,18 +1,91 @@
 ﻿<template>
   <div>
     <main id="mainContent">
+<<<<<<< HEAD
       <div class="text-center header">
         <p><mark></mark></p>
         <h1>
         <mark>Breaking the Taboo of HIV/AIDS</mark>
         </h1>
         <p><mark></mark></p>
+=======
+      <div class="text-center header ">
+        <h1>Breaking the Taboo of HIV/AIDS</h1>
+        <p>See who else is being tested and raising our numbers in awareness! :)</p>
+        <a
+          href="https://mobile.twitter.com/hashtag/IGotTested?src=hash&i=2e7b6c1e63ce1525&p=h&e=1"
+          class="btn btn-primary my-2"
+        >Click here to see all Twitter Results for #igottested</a>
+>>>>>>> 8b2ec72f78deae207d37960d8620903c7d12f827
       </div>
 
       <div class="container">
         <div class="row justify-content-center py-5">
+<<<<<<< HEAD
           <h2>Community Testimonials</h2>
        </div>
+=======
+          <h1>Community Testimonials</h1>
+        </div>
+
+<b-container class="bv-example-row">
+  <b-row>
+    <b-col><b-card
+    title="NAACP"
+    img-src="https://pbs.twimg.com/card_img/1173415593191624705/KNcrXED1?format=jpg&name=medium"
+    height ="250"
+    width ="240"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      FREE #HIV tests at select Walgreens June 25-27. Find locations: http://greaterthan.org/walgreens #IGotTested #NHTD http://ow.ly/i/bsivP
+    </b-card-text>
+<a
+          href="https://mobile.twitter.com/NAACP/status/613402131039694848"
+          class="btn btn-primary my-2"
+        >Follow @NAACP</a>
+  </b-card></b-col>
+    <b-col><b-card
+    title="BlackGirlsRun"
+    img-src="https://pbs.twimg.com/media/CIbhnooXAAASF27?format=jpg&name=small"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      National HIV Testing Day is 6/27! Free testing at local participating @Walgreens http://greaterthan.org/Walgreens #IGotTested
+    </b-card-text>
+
+    <a href="https://mobile.twitter.com/blackgirlsrun/status/614426470635696128"
+          class="btn btn-primary my-2">Follow @blackgirlsrun</a>
+  </b-card></b-col>
+    <b-col><b-card
+    title="Greater Than AIDS"
+    img-src="https://pbs.twimg.com/card_img/1171797512191127553/qj5XWTEJ?format=jpg&name=medium"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      Did you know you can get free or low-cost #HIV testing year round? Go to http://greaterthan.org/find-services for locations near you! #IGotTested
+    </b-card-text>
+    <a href="https://mobile.twitter.com/GreaterThanAIDS/status/882622591021629440"
+          class="btn btn-primary my-2">Follow @GreaterThanAIDS</a>
+  </b-card></b-col>
+  </b-row>
+</b-container>
+       <div>
+  
+</div>
+>>>>>>> 8b2ec72f78deae207d37960d8620903c7d12f827
 
       </div>
     </main>
@@ -40,6 +113,7 @@ export default {
   data() {
     return {
       gridTextAssets: [
+
         {
           shortDescription: "",
           title: "",
@@ -88,3 +162,4 @@ export default {
   padding-bottom: 5rem;
 }
 </style>
+
