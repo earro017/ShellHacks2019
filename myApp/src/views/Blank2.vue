@@ -1,7 +1,7 @@
 ﻿
 <template>
   <div>
-    <b-progress height="2rem" :value="75" variant="info" :striped="striped" :animated="animate" class="mt-2"></b-progress>
+    <b-progress height="2rem" :value="100" variant="info" :striped="striped" :animated="animate" class="mt-2"></b-progress>
   </div>
 </template>
 
