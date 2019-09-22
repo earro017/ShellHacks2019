@@ -92,8 +92,9 @@ export default {
 
 <style scoped>
 .header {
-  background-color: #bfdbf1;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background: #000000 url(https://www.impactbnd.com/hubfs/representation-matters-in-stock-photos.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 </style>
